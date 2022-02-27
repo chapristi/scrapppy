@@ -42,6 +42,7 @@ for categori in categories:
         page["cate0"]  = categorie.text
       page["cate1"]  = categorie.text 
       count+=1
+
     
     
     
@@ -53,5 +54,8 @@ for categori in categories:
     
 
     items.append(page)
+  with open("exemple.txt", "a") as fichier:
+	    fichier.write(str(items))    
+    
 
-  print(items)
+print(items)
